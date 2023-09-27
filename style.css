@@ -1,0 +1,82 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+::selection{
+  display: none;
+}
+body{
+  background-image: linear-gradient(90deg ,aqua, blue);
+  height: 100vh;
+}
+.container{
+  width: 900px;
+  margin: 75px auto 0;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0 0 10px white,
+              inset 0 0 10px white;
+
+
+}
+@media (max-width:991px) {
+  .container{
+    width: 80%;
+  }
+}
+.container .carousel{
+  width: 100%;
+  white-space: nowrap;
+  font-size: 0;
+  transition: transform 1.2s ease;
+  -webkit-transition: transform 1.2s ease;
+  -moz-transition: transform 1.2s ease;
+  -ms-transition: transform 1.2s ease;
+  -o-transition: transform 1.2s ease;
+
+}
+.container .carousel img{
+  width: 100%;
+  height: 450px;
+  margin-left: 14px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px white;
+
+}
+.container .carousel img:first-child{
+  margin: 0;
+}
+.container span{
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 55px;
+  height: 30px;
+  line-height: 20px;
+  padding: 5px 10px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 0 10px white;
+  box-shadow: inset 0 0 10px white;
+}
+#pre{
+  left: 20px;
+}
+#next{
+  right: 20px;
+}
